@@ -2,10 +2,12 @@ import axios from "axios";
 
 export default {
   // Gets books from the Google API
+  // PostMan test: http://localhost:3000//api/google?q=quilting
   getBooks: function(q) {
     return axios.get("/api/google", { params: { q: "title:" + q } });
   },
   // Gets all saved books
+  // This PostMan test worked: http://localhost:3000//api/books with no body variables
   getSavedBooks: function() {
     return axios.get("/api/books");
   },

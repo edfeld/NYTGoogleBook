@@ -13,6 +13,7 @@ class Saved extends Component {
   };
 
   componentDidMount() {
+    console.log("running componentDidMount");
     this.getSavedBooks();
   }
 
